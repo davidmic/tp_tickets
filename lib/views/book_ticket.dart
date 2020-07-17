@@ -26,7 +26,7 @@ class BookTicket extends StatelessWidget {
                         color: Colors.black54,
                       ),
                       SizedBox(width: 5,),
-                      Text('tp-Tickets',
+                      Text('O-Transport',
                         style: GoogleFonts.ubuntu(
                           color: Colors.black54,
                           fontSize: 24,
@@ -117,7 +117,7 @@ class BookTicket extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         SizedBox(
-                          width: MediaQuery.of(context).size.width * 0.25,
+                          width: MediaQuery.of(context).size.width * 0.18,
                           child: CustomTextFormField(
                             label: 'Departure Date',
                             keyboardType: TextInputType.text,
@@ -125,7 +125,7 @@ class BookTicket extends StatelessWidget {
                           ),
                         ),
                         SizedBox(
-                          width: MediaQuery.of(context).size.width * 0.25,
+                          width: MediaQuery.of(context).size.width * 0.18,
                           child: CustomTextFormField(
                             label: 'Departure Time',
                             keyboardType: TextInputType.text,
@@ -133,11 +133,20 @@ class BookTicket extends StatelessWidget {
                           ),
                         ),
                         SizedBox(
-                          width: MediaQuery.of(context).size.width * 0.25,
+                          width: MediaQuery.of(context).size.width * 0.18,
                           child: CustomTextFormField(
                             label: 'Gender',
                             keyboardType: TextInputType.text,
                             hintText: 'select gender',
+                          ),
+                        ),
+                        SizedBox(
+                          width: MediaQuery.of(context).size.width * 0.18,
+                          child: CustomTextFormField(
+                            readOnly: true,
+                            label: 'Distance to cover',
+                            keyboardType: TextInputType.text,
+                            hintText: '0km',
                           ),
                         ),
                       ],
@@ -157,7 +166,7 @@ class BookTicket extends StatelessWidget {
                               Navigator.push(context, MaterialPageRoute(builder: (context) => MyRequest()));
                             },
 //                                      hoverColor: Color(0xffdbc6eb),
-                            color: Color(0xff62d9a2),
+                            color: Color(0xff5C4033),
 //                           splashColor: Colors.white,
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.all(Radius.circular(5)),
@@ -170,7 +179,7 @@ class BookTicket extends StatelessWidget {
                                 children: [
                                   Text(
                                     'BOOK MY TICKET',
-                                    style: GoogleFonts.montserrat(color: Colors.black),
+                                    style: GoogleFonts.montserrat(color: Colors.white),
 //                                  textAlign: TextAlign.center,
                                   ),
 
@@ -187,7 +196,7 @@ class BookTicket extends StatelessWidget {
             ),
             Container(
               width: double.infinity,
-              child: Image.asset("asset/images/map.png"),
+              child: Image.asset("asset/images/map2.png", fit: BoxFit.cover,),
             ),
           ],
         ),

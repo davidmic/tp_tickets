@@ -6,6 +6,7 @@ class CustomTextFormField extends StatelessWidget {
   final String label;
   final String hintText;
   final bool filled;
+  final String intialValue;
   final bool obsureText;
   final FormFieldSetter<String> onSaved;
   final FormFieldValidator validator;
@@ -16,6 +17,7 @@ class CustomTextFormField extends StatelessWidget {
   final bool readOnly;
 
   CustomTextFormField({
+    this.intialValue,
     this.label,
     this.hintText,
     this.filled = true,
@@ -42,7 +44,7 @@ class CustomTextFormField extends StatelessWidget {
                  textStyle: TextStyle(
                   fontSize: 18,
                    fontWeight: FontWeight.bold,
-                   color: Color(0xff62d9a2)
+                   color: Color(0xff5C4033)
           ),
     ),),
         ),
@@ -51,6 +53,7 @@ class CustomTextFormField extends StatelessWidget {
           padding: EdgeInsets.only(left: 20.0, right: 20.0, bottom: 5.0),
           height: MediaQuery.of(context).size.height*0.09 ,
           child: TextFormField(
+            initialValue: intialValue,
             readOnly: readOnly,
             controller: controller,
             inputFormatters: inputFormatters,

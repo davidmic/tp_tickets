@@ -34,9 +34,9 @@ class _MyIndexPageState extends State<MyIndexPage> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Container(
-                          padding: const EdgeInsets.fromLTRB(120,20,80,20),
+                          padding: const EdgeInsets.fromLTRB(120,20,80,80),
                           width: double.infinity,
-                          color: Color(0xff62D9A2),
+                          color: Color(0xff5C4033),
                           child: Column(
                             children: [
                               Row(
@@ -50,9 +50,9 @@ class _MyIndexPageState extends State<MyIndexPage> {
                                         color: Colors.black54,
                                       ),
                                       SizedBox(width: 5,),
-                                   Text('tp-Tickets',
+                                   Text('O-Transports',
                                         style: GoogleFonts.ubuntu(
-                                          color: Colors.black54,
+                                          color: Colors.white54,
                                           fontSize: 24,
                                         ),
                                    ),
@@ -108,18 +108,19 @@ class _MyIndexPageState extends State<MyIndexPage> {
                                   ),
                                 ],
                               ),
+                              SizedBox(height:20),
                               Row(
                               children: [
                                 SizedBox(
-                                  width: MediaQuery.of(context).size.width * 0.45,
+                                  width: MediaQuery.of(context).size.width * 0.42,
                                   child: Column(
                                     children: [
                                       Padding(
                                         padding: const EdgeInsets.only(top: 30, bottom: 10),
                                         child: Text(
-                                            'Making Safety Accessible, Visible and Achievable',
+                                            'Making Transport Comfortable, Safe, Secure and Reliable',
                                           style: GoogleFonts.montserrat(
-                                              color: Colors.black54,
+                                              color: Colors.white54,
 //                                          color: Color(0xffffffff),
                                             fontSize: 45,
                                             fontWeight: FontWeight.bold
@@ -156,7 +157,7 @@ class _MyIndexPageState extends State<MyIndexPage> {
                                Navigator.push(context, MaterialPageRoute(builder: (context) => BookTicket()));
                              },
 //                                      hoverColor: Color(0xffdbc6eb),
-                             color: Color(0xff62d9a2),
+                             color: Color(0xff5C4033),
 //                           splashColor: Colors.white,
                              shape: RoundedRectangleBorder(
                                borderRadius: BorderRadius.all(Radius.circular(5)),
@@ -173,7 +174,7 @@ class _MyIndexPageState extends State<MyIndexPage> {
 //                                 SizedBox(width: 2,),
                                    Text(
                                      'BOOK A TICKET',
-                                     style: GoogleFonts.montserrat(color: Colors.black),
+                                     style: GoogleFonts.montserrat(color: Colors.white),
                                    ),
 
                                  ],
@@ -191,19 +192,24 @@ class _MyIndexPageState extends State<MyIndexPage> {
                           mainAxisAlignment: MainAxisAlignment.spaceAround,
                           children: [
                             IconWithContent(
-                              icon:  FontAwesomeIcons.bus,
-                              title: 'Security',
+                              icon:  FontAwesomeIcons.bed,
+                              title: 'Comfort',
                               subtitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
                             ),
                             IconWithContent(
-                              icon:  FontAwesomeIcons.plane,
-                              title: 'Reliable',
+                              icon:  FontAwesomeIcons.bus,
+                              title: 'Safe',
                               subtitle: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
                             ),
                             IconWithContent(
-                              icon:  FontAwesomeIcons.car,
-                              title: 'Safe',
+                              icon:  FontAwesomeIcons.shieldAlt,
+                              title: 'Secure',
                               subtitle: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.',
+                            ),
+                            IconWithContent(
+                              icon:  FontAwesomeIcons.clock,
+                              title: 'Reliable',
+                              subtitle: 'Sint Sed Excepteur sint ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.',
                             ),
                           ],
                         ),
@@ -229,11 +235,17 @@ class _MyIndexPageState extends State<MyIndexPage> {
 
                   ],
                 ),
-               Positioned(
-                 right: 78,
-                 top: 70,
-                 child: Image.asset("asset/images/vehicle.png", width: 500, height: 240,),
+                 Positioned(
+                 right: 120,
+                 top: 80,
+                 child: Image.asset("asset/images/b1.png", width: 500, height: 240,),
                ),
+               Positioned(
+                 right: 20,
+                 top: 130,
+                 child: Image.asset("asset/images/b4.png", width: 500, height: 240,),
+               ),
+              
               ],
             ),
           ],

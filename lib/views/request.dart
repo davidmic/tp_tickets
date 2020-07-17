@@ -210,7 +210,7 @@ class MyRequest extends StatelessWidget {
                         ),
                         SizedBox(width: 35,),
                         Text(
-                          '50 miles',
+                          '537 km',
                           style: GoogleFonts.montserrat(
                             color: Colors.black,
                             fontSize: 20,
@@ -232,7 +232,7 @@ class MyRequest extends StatelessWidget {
                               Navigator.push(context, MaterialPageRoute(builder: (context) => BookTicket()));
                             },
 //                                      hoverColor: Color(0xffdbc6eb),
-                            color: Color(0xff62d9a2),
+                            color: Color(0xff5C4033),
 //                           splashColor: Colors.white,
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.all(Radius.circular(5)),
@@ -245,7 +245,7 @@ class MyRequest extends StatelessWidget {
                                 children: [
                                   Text(
                                     'PROCEED WITH MY REQUEST',
-                                    style: GoogleFonts.montserrat(color: Colors.black),
+                                    style: GoogleFonts.montserrat(color: Colors.white),
 //                                  textAlign: TextAlign.center,
                                   ),
 

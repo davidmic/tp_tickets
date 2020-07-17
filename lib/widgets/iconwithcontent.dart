@@ -19,7 +19,7 @@ class IconWithContent extends StatelessWidget {
           FaIcon(
             icon,
             size: 60,
-            color: Color(0xff62d9a2),
+            color: Color(0xff5C4033),
           ),
           SizedBox(height: 5,),
           Padding(
